@@ -10,4 +10,11 @@ public class InputData {
     public void setInputString(String inputString) {
         this.inputString = inputString;
     }
+
+    @Override
+    public String toString() {
+        return "InputData{" +
+                "inputString='" + inputString + '\'' +
+                '}';
+    }
 }

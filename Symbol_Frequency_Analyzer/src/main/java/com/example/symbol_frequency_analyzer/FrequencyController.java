@@ -25,8 +25,7 @@ public class FrequencyController {
                 .sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (oldValue, newValue) -> oldValue, LinkedHashMap::new));
 
-        OutputData outputData = new OutputData();
-        outputData.setFrequencyMap(frequencyMap);
+        OutputData outputData = new OutputData(frequencyMap); // Передаем frequencyMap в конструктор OutputData
         return outputData;
     }
 }
