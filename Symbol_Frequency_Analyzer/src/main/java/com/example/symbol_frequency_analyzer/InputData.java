@@ -1,7 +1,5 @@
 package com.example.symbol_frequency_analyzer;
 
-import java.util.Map;
-
 public class InputData {
     private String inputString;
 
